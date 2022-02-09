@@ -1,5 +1,6 @@
 
 
+import 'package:digi_android/models/base_category_model.dart';
 import 'package:digi_android/models/base_model.dart';
 import 'package:dio/dio.dart';
 import 'package:retrofit/http.dart';
@@ -13,5 +14,8 @@ abstract class RestClient {
   
   @GET("home.php")
   Future<BaseModel> getHome();
+
+  @GET('getCategories.php')
+  Future<BaseCategoryModel> getCategories();
 
 }

@@ -1,6 +1,7 @@
 import 'package:digi_android/api/rest_client.dart';
 import 'package:digi_android/customView/custom_text.dart';
 import 'package:digi_android/models/base_model.dart';
+import 'package:digi_android/pages/productDetail/product_detail_page.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 
@@ -94,7 +95,7 @@ class _HomePageState extends State<HomePage> {
 
                                       onTap: () {
 
-                                      //  Navigator.push(context,MaterialPageRoute(builder: (context )=>ProductDetailPage(product: snapshot.data!.mobile[index])));
+                                       Navigator.push(context,MaterialPageRoute(builder: (context )=>ProductDetailPage(product: snapshot.data!.mobile[index])));
 
                                       },
 
@@ -138,7 +139,7 @@ class _HomePageState extends State<HomePage> {
 
                                       onTap: () {
 
-                                    //    Navigator.push(context,MaterialPageRoute(builder: (context )=>ProductDetailPage(product: snapshot.data!.makeup[index])));
+                                        Navigator.push(context,MaterialPageRoute(builder: (context )=>ProductDetailPage(product: snapshot.data!.mobile[index])));
 
                                       },
 
