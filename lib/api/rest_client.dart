@@ -18,4 +18,7 @@ abstract class RestClient {
   @GET('getCategories.php')
   Future<BaseCategoryModel> getCategories();
 
+  @GET("home.php/{id}")
+  Future<BaseModel> updateTask(@Path() String id);
+
 }
